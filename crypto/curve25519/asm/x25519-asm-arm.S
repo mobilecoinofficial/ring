@@ -23,7 +23,7 @@
 #endif
 #endif
 
-#if !defined(OPENSSL_NO_ASM) && defined(__arm__) && !defined(__APPLE__)
+#if !defined(OPENSSL_NO_ASM) && defined(__arm__)
 
 #if !defined(__APPLE__)
 .fpu neon
@@ -2134,4 +2134,4 @@ mov sp,r12
 vpop {q4,q5,q6,q7}
 bx lr
 
-#endif  /* !OPENSSL_NO_ASM && __arm__ && !__APPLE__ */
+#endif  /* !OPENSSL_NO_ASM && __arm__ */
